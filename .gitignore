@@ -1,0 +1,20 @@
+# Node modules
+node_modules/
+
+# Compilados
+build/css/*.css.map
+build/js/*.js.map
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Gulp
+dist/
+.cache/
+
+# VSCode
+.vscode/
+
+# SASS
+.sass-cache/

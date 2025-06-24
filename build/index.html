@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título del sitio -->
+    <title>Meeti | Encuentra o crea eventos</title>
+
+    <!-- Meta descripción SEO -->
+    <meta
+      name="description"
+      content="Meeti es una plataforma para crear o unirte a grupos y eventos de tus intereses: programación, diseño, fotografía, emprendimiento y más."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+
+    <!-- Tipografías -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/app.css" />
+
+    <!-- Open Graph para compartir en redes -->
+    <meta property="og:title" content="Meeti - Crea y encuentra eventos" />
+    <meta
+      property="og:description"
+      content="Únete a eventos de tecnología, diseño, negocios y más. ¡Crea o encuentra tu grupo ideal!"
+    />
+    <meta
+      property="og:image"
+      content="https://tu-dominio.netlify.app/img/perfil3.png"
+    />
+    <meta property="og:url" content="https://tu-dominio.netlify.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+
+  <body>
+    <header class="header contenedor">
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="Logo de Meeti" />
+        </a>
+      </div>
+
+      <nav class="navegacion">
+        <a href="#" class="navegacion__enlace navegacion__enlace--crear"
+          >Crear grupo</a
+        >
+        <a href="#" class="navegacion__enlace enlace-animado">Iniciar sesión</a>
+        <a href="#" class="navegacion__enlace enlace-animado">Registrarse</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1 class="hero__texto">
+          Encuentra o crea un grupo para compartir lo que más te gusta
+        </h1>
+        <a href="#" class="hero__enlace">Obtener una cuenta</a>
+      </section>
+    </main>
+
+    <section class="busqueda">
+      <h2 class="busqueda__heading">Busca un grupo en tu ciudad</h2>
+
+      <div class="contenedor">
+        <form action="" class="formulario">
+          <select
+            required="true"
+            name="categoria"
+            id="categoria"
+            class="formulario__campo"
+            aria-label="Categoría"
+          >
+            <option value="">-- Selecciona una categoría --</option>
+            <option value="programacion">Programación</option>
+            <option value="diseno">Diseño</option>
+            <option value="negocios">Negocios</option>
+            <option value="moda">Moda</option>
+            <option value="salud">Ejercicio y Salud</option>
+            <option value="fotografia">Fotografía</option>
+            <option value="comida">Comida</option>
+            <option value="interior">Diseño Interior</option>
+            <option value="cafe">Café</option>
+            <option value="cine">Cine</option>
+            <option value="libros">Libros</option>
+            <option value="emprendimiento">Emprendimiento</option>
+          </select>
+
+          <input
+            type="text"
+            id="evento"
+            name="evento"
+            required="true"
+            class="formulario__campo"
+            placeholder="Nombre del evento"
+            aria-label="Nombre del evento"
+          />
+
+          <input
+            type="text"
+            id="ubicacion"
+            required="true"
+            name="ubicacion"
+            class="formulario__campo"
+            placeholder="Ciudad o país"
+            aria-label="Ciudad o país"
+          />
+
+          <input type="submit" class="formulario__submit" value="Buscar" />
+        </form>
+      </div>
+    </section>
+
+    <main class="eventos contenedor">
+      <h2 class="eventos__heading">Próximos eventos</h2>
+
+      <div class="eventos__grid">
+        <!-- Evento 1 -->
+        <div class="evento">
+          <a href="meeti.html" class="evento__enlace">
+            <img
+              src="img/imagen1.jpg"
+              alt="Evento sobre AI"
+              class="evento__imagen"
+            />
+
+            <div class="evento__contenido">
+              <p class="evento__fecha">15/07/2025</p>
+              <h3 class="evento__nombre">Cómo iniciar con la AI</h3>
+
+              <div class="evento__autor">
+                <div class="evento__autor-imagen">
+                  <img src="img/perfil1.jpg" alt="Organizador RaroDev" />
+                </div>
+                <div class="evento__autor-info">
+                  <p class="evento__organizado-texto">Organizado por:</p>
+                  <p class="evento__organizado-nombre">
+                    RaroDev Software Engineer
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Evento 2 -->
+        <div class="evento">
+          <a href="meeti.html" class="evento__enlace">
+            <img
+              src="img/imagen2.jpg"
+              alt="Evento sobre diseño UX"
+              class="evento__imagen"
+            />
+
+            <div class="evento__contenido">
+              <p class="evento__fecha">22/07/2025</p>
+              <h3 class="evento__nombre">Introducción al diseño UX</h3>
+
+              <div class="evento__autor">
+                <div class="evento__autor-imagen">
+                  <img src="img/perfil2.jpg" alt="Organizadora Ana UX" />
+                </div>
+                <div class="evento__autor-info">
+                  <p class="evento__organizado-texto">Organizado por:</p>
+                  <p class="evento__organizado-nombre">Ana UX Design</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Evento 3 -->
+        <div class="evento">
+          <a href="meeti.html" class="evento__enlace">
+            <img
+              src="img/imagen3.webp"
+              alt="Evento de fotografía urbana"
+              class="evento__imagen"
+            />
+
+            <div class="evento__contenido">
+              <p class="evento__fecha">31/10/2025</p>
+              <h3 class="evento__nombre">Fotografía en el Upside Down</h3>
+
+              <div class="evento__autor">
+                <div class="evento__autor-imagen">
+                  <img
+                    src="img/perfil3.png"
+                    alt="Organizador LensMaster"
+                  />
+                </div>
+                <div class="evento__autor-info">
+                  <p class="evento__organizado-texto">Organizado por:</p>
+                  <p class="evento__organizado-nombre">
+                    Hawkins Lab Photography Club
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <section class="categorias">
+      <h2 class="categorias__heading">Categorías</h2>
+
+      <ul class="categorias__grid contenedor">
+        <li class="categoria">
+          <img
+            src="img/categoria_1.jpg"
+            alt="Programación"
+            class="categoria__imagen"
+          />
+          <p class="categoria__nombre">Programación</p>
+        </li>
+        <li class="categoria">
+          <img
+            src="img/categoria_2.jpg"
+            alt="Diseño UX y UI"
+            class="categoria__imagen"
+          />
+          <p class="categoria__nombre">Diseño UX y UI</p>
+        </li>
+        <li class="categoria">
+          <img
+            src="img/categoria_3.jpg"
+            alt="Negocios e ideas"
+            class="categoria__imagen"
+          />
+          <p class="categoria__nombre">Negocios e ideas</p>
+        </li>
+        <li class="categoria">
+          <img
+            src="img/categoria_4.jpg"
+            alt="Ropa y Moda"
+            class="categoria__imagen"
+          />
+          <p class="categoria__nombre">Ropa y Moda</p>
+        </li>
+        <li class="categoria">
+          <img
+            src="img/categoria_5.jpg"
+            alt="Ejercicio y Bienestar"
+            class="categoria__imagen"
+          />
+          <p class="categoria__nombre">Ejercicio y Bienestar</p>
+        </li>
+        <li class="categoria">
+          <img
+            src="img/categoria_6.jpg"
+            alt="Fotografía"
+            class="categoria__imagen"
+          />
+          <p class="categoria__nombre">Fotografía</p>
+        </li>
+        <li class="categoria">
+          <img
+            src="img/categoria_7.jpg"
+            alt="Comida"
+            class="categoria__imagen"
+          />
+          <p class="categoria__nombre">Comida</p>
+        </li>
+        <li class="categoria">
+          <img
+            src="img/categoria_8.jpg"
+            alt="Diseño Interior"
+            class="categoria__imagen"
+          />
+          <p class="categoria__nombre">Diseño Interior</p>
+        </li>
+        <li class="categoria">
+          <img
+            src="img/categoria_9.jpg"
+            alt="Café"
+            class="categoria__imagen"
+          />
+          <p class="categoria__nombre">Café</p>
+        </li>
+        <li class="categoria">
+          <img
+            src="img/categoria_10.jpg"
+            alt="Cine"
+            class="categoria__imagen"
+          />
+          <p class="categoria__nombre">Cine</p>
+        </li>
+        <li class="categoria">
+          <img
+            src="img/categoria_11.jpg"
+            alt="Libros"
+            class="categoria__imagen"
+          />
+          <p class="categoria__nombre">Libros</p>
+        </li>
+        <li class="categoria">
+          <img
+            src="img/categoria_12.jpg"
+            alt="Emprendimiento"
+            class="categoria__imagen"
+          />
+          <p class="categoria__nombre">Emprendimiento</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="grupos">
+      <div class="grupos__grid contenedor">
+        <div class="grupos__bloque">
+          <h3 class="grupos__heading">Crea un grupo</h3>
+          <p class="grupos__texto">
+            Comparte lo que te apasiona con los demás. Crea tu propio grupo y
+            organiza eventos desde hoy, sin ningún costo.
+          </p>
+        </div>
+        <div class="grupos__bloque">
+          <h3 class="grupos__heading">Únete a un grupo</h3>
+          <p class="grupos__texto">
+            Conecta con personas que comparten tus mismos intereses. Únete a un
+            grupo ya existente y participa en próximos eventos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer contenedor">
+      <nav class="footer__nav navegacion">
+        <a href="#" class="navegacion__enlace navegacion__enlace--crear"
+          >Crear grupo</a
+        >
+        <a href="#" class="navegacion__enlace enlace-animado">Iniciar sesión</a>
+        <a href="#" class="navegacion__enlace enlace-animado">Registrarse</a>
+      </nav>
+
+      <div class="footer__copyright">
+        <p class="footer__texto">
+          &copy; Todos los derechos reservados - Meeti
+        </p>
+        <p class="footer__texto">
+          Proyecto desarrollado por
+          <a
+            href="https://www.linkedin.com/in/robinson-ojeda-9273a4346/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer__autor"
+          >
+            RaroDev
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.navegacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include m.tablet {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  &__enlace {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    transition: color 0.3s ease;
+    position: relative;
+
+    // Enlace especial para "Crear grupo"
+    &--crear {
+      font-weight: 700;
+      color: v.$primario;
+      position: relative;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: v.$primario;
+      }
+
+      @include m.tablet {
+        &::after {
+          content: "";
+          position: absolute;
+          right: -1.5rem;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 2px;
+          height: 0;
+          background-color: v.$primario;
+          transition: height 0.3s ease;
+        }
+
+        &:hover::after {
+          height: 4rem;
+        }
+      }
+    }
+  }
+}
